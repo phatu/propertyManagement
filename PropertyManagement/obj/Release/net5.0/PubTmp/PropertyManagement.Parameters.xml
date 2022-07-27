@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ThePropertyManagement" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\phatu\\source\\repos\\PropertyManagement\\PropertyManagement\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="PropertyManagement.Data.ApplicationDbContext" description="" value="Data Source=tcp:thepropertymanagementdbserver.database.windows.net,1433;Initial Catalog=PropertyManagement_db;User Id=Phatu@thepropertymanagementdbserver;Password=Here,.190" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\phatu\\source\\repos\\PropertyManagement\\PropertyManagement\\obj\\Release\\net5\.0\\PubTmp\\EFSQLScripts\\PropertyManagement\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+</parameters>

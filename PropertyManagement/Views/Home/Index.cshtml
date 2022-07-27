@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Property Management</h1>
+    <img src="~/img/bg.jpg" width="500" height="300" />
+</div>
+
+<div class="modal fade" id="UserLoginModal" tabindex="-1" role="dialog" aria-labelledby="UserLoginModal">
+    <partial name="_UserLoginPartial" />
+
+</div>
+
+
+<div class="modal fade" id="UserRegistrationModal" tabindex="-1" role="dialog" aria-labelledby="UserRegistrationModal">
+    <partial name="_UserRegistrationPartial" />
+
+</div>
+
+
+
+
+
+
+@section Scripts
+{
+    <script src="~/js/UserRegistration.js" asp-append-version="true"></script>
+    <script src="~/js/UserLogin.js" asp-append-version="true"></script>
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+    }
+
+}
+

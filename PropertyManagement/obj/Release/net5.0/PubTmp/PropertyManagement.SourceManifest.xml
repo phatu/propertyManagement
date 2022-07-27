@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\phatu\source\repos\PropertyManagement\PropertyManagement\obj\Release\net5.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\phatu\source\repos\PropertyManagement\PropertyManagement\obj\Release\net5.0\PubTmp\EFSQLScripts\PropertyManagement.Data.ApplicationDbContext.sql" />
+</sitemanifest>

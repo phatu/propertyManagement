@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4e8+oVzPMU60qgBBZccJAgAAAAACAAAAAAAQZgAAAAEAACAAAAD5v3WIgRVlTTEPYTSXXHARiiFee9eh41s1QNXoJgrJ9wAAAAAOgAAAAAIAACAAAABzrxm+F8WHO8MXfvir9qeUmqvpIQqyasLZ+z0aUMV4FYAAAADHJUiM0n2+Nr6U5KvyDmoh1MhQV6u4YycsWf+gzPxuQTsRCMmVK4VOVuexLPyfbWwm4g39k1mjtChWyR4OCFuipwlyFQ3mmVihLEU/mDzMwsWqRwD7ggfwc5BmVLSRV6laino2l9S5RcXrIdBpQAHUL5zdTMMURctE2MriCZVlqEAAAADIrPLDAAQfd4R0W63ETiN3YrXDEMhNn5aDe83qGNPY4UamqOqViZ16k+E4VsFSUnNLXpwkJiC1UnLovxdTVs5X</EncryptedPassword>
+    <History>True|2022-07-27T10:56:47.8614483Z;True|2022-07-27T12:20:25.3889432+02:00;True|2022-07-27T12:09:14.7680517+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="PropertyManagement.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:thepropertymanagementdbserver.database.windows.net,1433%3bInitial Catalog=PropertyManagement_db%3bUser Id=Phatu%40thepropertymanagementdbserver%3bPassword=Here,.190</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

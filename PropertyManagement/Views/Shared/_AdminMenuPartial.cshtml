@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using PropertyManagement.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@if (SignInManager.IsSignedIn(User) && await UserManager.IsInRoleAsync(UserManager.GetUserAsync(User).Result, "admin"))
+{
+    <li class="nav-item dropdown show">
+        <a class="dropdown-toggle nav-link text-dark" href="#" data-toggle="dropdown">
+            Admin
+        </a>
+
+        <div class="dropdown-menu">
+            <a class="dropdown-item" asp-area="Admin" asp-controller="Room" asp-action="Index">Rooms</a>
+            <a class="dropdown-item" asp-area="Admin" asp-controller="Department" asp-action="Index">Department</a>
+            <a class="dropdown-item" asp-area="Admin" asp-controller="Priority" asp-action="Index">Priority</a>
+        </div>
+
+    </li>
+}
+else if (!SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="#ContactUs"><i class="fas fa-phone-alt mr-1 text-info"></i>Contact Us</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="#AboutUs"><i class="fas fa-chalkboard-teacher mr-1 text-info"></i>About Us</a>
+    </li>
+}
